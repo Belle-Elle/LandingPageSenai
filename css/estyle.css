@@ -235,3 +235,20 @@ footer span{
     font-family:  'Open Sans', sans-serif;
     font-size: 18px;
 }
+
+
+@media (max-width:420px) {
+    .fundo_baner{
+        display: flex;
+        justify-content: center;
+
+    }
+    .fundo_baner{
+        height: 800px;
+        width: auto;
+    }
+    
+    h1{
+        width: 380px;
+    }
+}
