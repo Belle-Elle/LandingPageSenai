@@ -238,17 +238,91 @@ footer span{
 
 
 @media (max-width:420px) {
-    .fundo_baner{
+    .container{
+        width: 80vw;
+    }
+    
+    .baner-container{
         display: flex;
         justify-content: center;
-
+        height: 555px;
     }
+    .baner_container {
+        position: relative;
+        height: 555px;
+    }
+
     .fundo_baner{
-        height: 800px;
         width: auto;
+        height:100%;
+    }
+
+    .div-baner{
+        left: 0;
+        align-items:center;
+        top:90px;
     }
     
     h1{
-        width: 380px;
+        width: 90%;
+        font-size: 35px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    hr{
+        width:90%;
+        margin: 30px 0;
+    }
+
+    .div-baner span{
+        font-size: 35px;
+        margin-top: 0%;
+    }
+
+    .div-baner img {
+        width: 47px;
+        margin-top: 30px;
+    }
+
+    .container_projetos{
+        height: auto;
+    }
+
+    .img-box-sobre{
+        width: 80vw;
+    }
+
+    .container_projetos h2{
+        font-size:30px;
+        margin: 20% 0 ;
+    }
+
+    .box_sobre{
+        flex-direction:column;
+    }
+
+    .box_participantes{
+        margin-top: 50px;
+        padding-bottom:50px;
+    }
+
+    .box_participantes h3{
+        width:auto;
+        font-size:21px;
+        margin: 50px 0;
+    }
+
+    .box_participantes p{
+        width:auto;
+        text-align: justify;
+    }
+
+    .container_info{
+        flex-direction:column;
+        height:600px;
+        justify-content: space-evenly;
     }
 }
+
+
