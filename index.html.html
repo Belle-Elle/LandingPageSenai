@@ -6,19 +6,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing page</title>
+    <script src="https://kit.fontawesome.com/d093ea434c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/estyle.css">
 </head>
 
 <body>
     <header>
         <div class="container container_header">
-            <nav class=" nav-header"
+            <nav id="links" class=" nav-header"
                 href="@import url ('https://fonts.googleapis.com/css2? family = Bebas + Neue & display = swap');">
                 <a href="#inicio">Inicio</a>
                 <a href="#sobre">Sobre</a>
                 <a href="#desafios">Desafio</a>
                 <a href="#endereço">Endereço</a>
             </nav>
+            <a class="btn-menu" href="#" onclick="botãoDoMenu()">
+                <i class="fas fa-bars"></i>
+            </a>
         </div>
     </header>
 
@@ -89,6 +93,20 @@
     <footer>
         <span>Copyright © 2020 - Escola Senai de Informática</span>
     </footer>
+
+    <script>
+        function botãoDoMenu(){
+            var menu = document.getElementById("links");
+            if (menu.style.display === "flex") {
+                // esconder menu
+                menu.style.display = "none";
+            } else {
+               // mostrar o menu 
+               menu.style.display = "flex";
+               menu.style.background = "black"
+            }
+        }
+    </script>
 </body>
 
 </html>
